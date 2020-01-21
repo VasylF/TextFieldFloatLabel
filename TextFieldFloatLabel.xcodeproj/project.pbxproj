@@ -14,6 +14,7 @@
 		0443DF7323D797CE00C188FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0443DF7223D797CE00C188FD /* Assets.xcassets */; };
 		0443DF7623D797CE00C188FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0443DF7523D797CE00C188FD /* Preview Assets.xcassets */; };
 		0443DF7923D797CE00C188FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443DF7723D797CE00C188FD /* LaunchScreen.storyboard */; };
+		0443DF7F23D7A01900C188FD /* TextFieldFloatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DF7E23D7A01900C188FD /* TextFieldFloatLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0443DF7523D797CE00C188FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0443DF7823D797CE00C188FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0443DF7A23D797CE00C188FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0443DF7E23D7A01900C188FD /* TextFieldFloatLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFloatLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				0443DF5E23D7967F00C188FD /* TextFieldFloatLabel.h */,
 				0443DF5F23D7968000C188FD /* Info.plist */,
+				0443DF7E23D7A01900C188FD /* TextFieldFloatLabel.swift */,
 			);
 			path = TextFieldFloatLabel;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				TargetAttributes = {
 					0443DF5A23D7967F00C188FD = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					0443DF6923D797CC00C188FD = {
 						CreatedOnToolsVersion = 11.0;
@@ -208,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0443DF7F23D7A01900C188FD /* TextFieldFloatLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +363,7 @@
 		0443DF6423D7968000C188FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -373,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VasylFuchenko.TextFieldFloatLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +388,7 @@
 		0443DF6523D7968000C188FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
